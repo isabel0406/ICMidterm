@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.js"></script>
+    <style media="screen">
+      .game{
+        text-align:center;
+      }
+        #sketchLeft {
+         width: 410px;
+         height: 600px;
+         border: none;
+         overflow: hidden;
+       }
+
+       #sketchRight {
+         width: 200px;
+         height: 600px;
+         border: none;
+         overflow: hidden;
+       }
+
+      h1{
+        text-align:center;
+      }
+      h3{
+        text-align:center;
+      }
+      .proposal{
+        margin-top:50px;
+        margin-left:10%;
+        margin-right:10%;
+        text-align:justify;
+      }
+      h4{
+        text-align:center;
+      }
+      #diagram{
+        text-align:center;
+        display:flex;
+      }
+      #diagram img{
+        width:80%;
+      }
+    </style>
+    <title>Midterm Proposal</title>
+  </head>
+  <body>
+    <h1>Midterm Proposal</h1>
+    <h3>Isabel Chai & Crystal Wu</h3>
+    <div class="game">
+      <iframe id="sketchLeft" src="sketchLeft.html" scrolling="no"></iframe>
+      <iframe id="sketchRight" src="sketchRight.html" scrolling="no"></iframe>
+    </div>
+
+    <div class="proposal">
+      <p>For the midterm project, we plan to create a Tetris game, a classic puzzle video game, using p5.js. In the beginning, there should be a start interface that prompts the user with different game difficulty levels (determined by the drop speed) and a start button. After the user makes a selection and starts the game, the game interface should be on the left, and on the right is the scoring page. The user should be able to rotate the shape and move tetrominoes using different keys. If squares fill up the entire row, it should clear the row and move other rows down a level. If all the rows fill up to the top, then the game will end and report the score to the user. The game will trigger sound when the tetrominoes drop at a certain point and when the row is clear.
+        </p>
+      <p>From technology's perspective, we need to figure out the mechanism to detect if the row is filled or not. If the row is filled up, how to clear the row and move other rows down a level. It might involve some collision detection for us to determine this. Also, if we are using images for tetromino, we are not sure if image collision detection is similar to what we did before. The tetrominoes can’t overlap with each other as well. So we need to do a lot of research before we start creating the game. Additionally, we might need to figure out how to display the next random tetromino on the right side of the screen so the user knows what to do next. Meanwhile, the update of the preview for each rotation of the tetromino is important as well as we need to consider how it can fit with each other and whether each square will fall down when the space is empty below.
+      </p>
+    </div>
+    <h4>- Diagrams -</h4>
+    <div id="diagram">
+
+      <div class="start">
+        <h5>Start Page</h5>
+        <img src="start.png" alt="start">
+      </div>
+      <div class="game">
+        <h5>Game Page</h5>
+        <img src="game.png" alt="">
+      </div>
+      <div class="end">
+        <h5>End Page</h5>
+        <img src="end.png" alt="">
+      </div>
+
+    </div>
+
+  </body>
+</html>
